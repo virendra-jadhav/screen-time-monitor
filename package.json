@@ -12,7 +12,8 @@
     "build-linux": "electron-builder --linux",
     "build-all": "npm run build-win  && npm run  build-linux",
     "build:web": "mkdirp web && copyfiles home.html home.css home.js assets/icons/* web/ && copyfiles styles.css web/",
-    "build": "npm run build:web"
+    "build": "npm run build:web",
+    "build-linux-wsl": "wsl electron-builder --linux"
   },
   "keywords": [
     "screen-time",
@@ -31,7 +32,7 @@
   "build": {
     "appId": "com.screentimemonitor.screentimemonitor",
     "productName": "Screen Time Monitor",
-    "artifactName": "ScreenTime-${os}-${arch}.${ext}",
+    "artifactName": "ScreenTimeMonitor-${os}-${arch}.${ext}",
     "directories": {
       "output": "dist"
     },
