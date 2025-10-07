@@ -1,0 +1,120 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  background: #f9fafb;
+  color: #333;
+}
+
+/* Navbar */
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #2563eb;
+  color: white;
+  padding: 1rem 2rem;
+}
+.navbar nav a {
+  color: white;
+  margin-left: 1rem;
+  text-decoration: none;
+}
+.navbar nav a:hover {
+  text-decoration: underline;
+}
+.logo {
+  font-size: 1.5rem;
+}
+
+/* Hero */
+.hero {
+  text-align: center;
+  padding: 4rem 2rem;
+  background: #e0f2fe;
+}
+.hero h2 {
+  font-size: 2.5rem;
+}
+.btn-primary {
+  background: #2563eb;
+  color: white;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  text-decoration: none;
+  font-weight: bold;
+}
+.btn-primary:hover {
+  background: #1d4ed8;
+}
+
+/* Features */
+.features {
+  padding: 2rem;
+  text-align: center;
+}
+.feature-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.card {
+  background: white;
+  border-radius: 10px;
+  padding: 1.5rem;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.1);
+  font-weight: bold;
+}
+
+/* Download */
+.download {
+  text-align: center;
+  padding: 2rem;
+  background: #f3f4f6;
+}
+.download-buttons a {
+  margin: 0.5rem;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  color: white;
+  text-decoration: none;
+}
+.btn-win {
+  background: #22c55e;
+}
+.btn-linux {
+  background: #f97316;
+}
+.btn-win:hover {
+  background: #16a34a;
+}
+.btn-linux:hover {
+  background: #ea580c;
+}
+
+/* Feedback */
+.feedback {
+  text-align: center;
+  padding: 2rem;
+}
+.feedback form {
+  max-width: 400px;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+.feedback input,
+.feedback textarea {
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+/* Footer */
+.footer {
+  text-align: center;
+  padding: 1rem;
+  background: #2563eb;
+  color: white;
+}

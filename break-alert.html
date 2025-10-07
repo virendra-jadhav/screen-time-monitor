@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Break Time!</title>
+    <link rel="stylesheet" href="./styles.css">
+</head>
+<body>
+    <div class="break-container">
+        <div class="break-header">
+            <h2>⏰ Break Time!</h2>
+            <p class="break-message">You've been using your computer for <span id="usageTime">--:--:--</span></p>
+        </div>
+
+        <div class="break-content">
+            <div class="break-suggestions">
+                <h3>Take a moment to:</h3>
+                <div class="suggestions-grid">
+                    <div class="suggestion">
+                        <span class="icon">👀</span>
+                        <span>Look away from screen</span>
+                    </div>
+                    <div class="suggestion">
+                        <span class="icon">🧘</span>
+                        <span>Stretch your body</span>
+                    </div>
+                    <div class="suggestion">
+                        <span class="icon">🌬️</span>
+                        <span>Take deep breaths</span>
+                    </div>
+                    <div class="suggestion">
+                        <span class="icon">💧</span>
+                        <span>Drink some water</span>
+                    </div>
+                </div>
+            </div>
+
+            <div class="break-timer" id="breakTimer" style="display: none;">
+                <p>Break time remaining: <span id="breakTimeLeft">05:00</span></p>
+                <div class="break-progress">
+                    <div class="break-progress-fill" id="breakProgressFill"></div>
+                </div>
+            </div>
+        </div>
+
+        <div class="break-actions">
+            <button id="startBreakBtn" class="btn primary large">
+                ✅ Start Break (Resets Timer)
+            </button>
+            <button id="snoozeBtn" class="btn secondary">
+                ⏰ Remind me in 5 minutes
+            </button>
+        </div>
+
+        <div class="break-tip">
+            <p><strong>Tip:</strong> Regular breaks help reduce eye strain and improve focus!</p>
+        </div>
+    </div>
+
+    <script src="break-renderer.js"></script>
+</body>
+</html>
