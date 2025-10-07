@@ -13,8 +13,7 @@
     "build-all": "npm run build-win  && npm run  build-linux",
     "build:web": "mkdirp web && copyfiles home.html home.css home.js assets/icons/* web/ && copyfiles styles.css web/",
     "build": "npm run build:web",
-    "build-linux-wsl": "wsl electron-builder --linux",
-    "clean": "rimraf dist artifacts"
+    "build-linux-wsl": "wsl electron-builder --linux"
   },
   "keywords": [
     "screen-time",
@@ -35,7 +34,7 @@
     "productName": "Screen Time Monitor",
     "artifactName": "ScreenTimeMonitor-${os}.${ext}",
     "directories": {
-      "output": "artifacts"
+      "output": "dist"
     },
     "files": [
       "main.js",

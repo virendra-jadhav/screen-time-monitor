@@ -37,7 +37,7 @@ jobs:
             npm run build-linux
           fi
 
-      - name: Upload artifacts
+      - name: Upload dist
         uses: actions/upload-artifact@v3
         with:
           name: ${{ matrix.os }}-build
