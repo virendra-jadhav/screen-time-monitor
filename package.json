@@ -33,7 +33,7 @@
     "productName": "Screen Time Monitor",
     "artifactName": "ScreenTime-${os}-${arch}.${ext}",
     "directories": {
-      "output": "path.join(__dirname, 'dist')"
+      "output": "dist"
     },
     "files": [
       "main.js",
