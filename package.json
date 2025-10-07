@@ -33,7 +33,7 @@
   "build": {
     "appId": "com.screentimemonitor.screentimemonitor",
     "productName": "Screen Time Monitor",
-    "artifactName": "ScreenTimeMonitor-${os}-${arch}.${ext}",
+    "artifactName": "ScreenTimeMonitor-${os}.${ext}",
     "directories": {
       "output": "artifacts"
     },
