@@ -1,7 +1,7 @@
 // break-renderer.js - Break alert window renderer
 class BreakAlert {
   constructor() {
-    this.breakDuration = 1 * 60; // 5 minutes break
+    this.breakDuration = 5 * 60; // 5 minutes break
     this.remainingTime = this.breakDuration;
     this.breakTimer = null;
     this.isBreakActive = false;
