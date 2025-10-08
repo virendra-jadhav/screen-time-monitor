@@ -58,7 +58,7 @@ class ScreenTimeUI {
       const breakThresholdMinutes = parseInt(
         this.elements.breakThreshold.value
       );
-      if (breakThresholdMinutes < 0 || breakThresholdMinutes > 120) {
+      if (breakThresholdMinutes < 15 || breakThresholdMinutes > 120) {
         alert("Please enter a value between 15 and 120 minutes.");
         return;
       }

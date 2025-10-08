@@ -16,7 +16,7 @@ class ScreenTimeMonitor {
   constructor() {
     this.mainWindow = null;
     this.tray = null;
-    this.usageTime = 50;
+    this.usageTime = 0;
     this.breakThreshold = 30 * 60; // 30 min in seconds
     this.isMonitoring = false;
     this.isBreakTime = false;
